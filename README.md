@@ -107,7 +107,7 @@ https://drive.google.com/drive/folders/1jB8OYHTc0qsHonB24U1xts-XVWA0nwXx?usp=sha
 
 ## 🎥 Video Walkthrough
 refer to the video link below for detailed walkthrough .
-(Add your Loom/YouTube link here)
+https://drive.google.com/drive/folders/113QnXoFO_dM-UkCrqd016d-1Scp1OFI3?usp=sharing
 
 ---
 
@@ -119,13 +119,18 @@ Streamlit was chosen for rapid prototyping and clean UI. Groq LLM was used for f
 
 ### Biggest challenge
 
-Parsing structured output from LLM reliably was challenging. This was solved by enforcing strict response formats and building custom parsers.
+One of the biggest challenges I faced was working without any real dataset. Since I did not have actual candidate data, I designed the system to generate competitor profiles using AI itself. This helped simulate a realistic comparison and ranking system.
+
+Another challenge was handling PDF parsing, especially for resumes where text extraction is not clean or the PDF is scanned. I handled basic cases, but improving this further would require better OCR support.
+
+I also had to ensure that the AI responses were structured properly so that they could be parsed and displayed in the UI. Designing the prompt format and parsing logic was an important part of the implementation.
+
 
 ### What I would improve
 
-* Add embeddings + similarity scoring instead of only LLM
-* Improve PDF parsing for scanned resumes
-* Add user authentication & history tracking
+-Support for scanned PDFs using better text extraction methods
+-Enhance the login and history feature to store and track previous analyses
+-Improve matching accuracy by using embeddings and similarity scoring instead of only prompt-based evaluation
 
 ---
 
